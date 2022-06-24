@@ -1,0 +1,19 @@
+{
+  "name": "tobiasweyer.dev",
+  "author": "Tobias Weyer",
+  "version": "0.0.1",
+  "description": "personal website",
+  "keywords": [
+    "eleventy"
+  ],
+  "repository": " BoaPi/tobiasweyer.dev",
+  "engines": {
+    "node": "18.0.0"
+  },
+  "scripts": {
+    "watch": "eleventy --serve --port=2022"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.1"
+  }
+}
