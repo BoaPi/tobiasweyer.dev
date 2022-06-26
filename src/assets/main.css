@@ -1,0 +1,6 @@
+@import "normalize.css";
+
+html {
+  background-color: red;
+  color: white;
+}
