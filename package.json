@@ -11,7 +11,7 @@
     "node": "18.0.0"
   },
   "scripts": {
-    "watch": "eleventy --config=.eleventy.js --serve --incremental --port=2022"
+    "watch": "eleventy --config=.eleventy.js --serve --port=2022"
   },
   "devDependencies": {
     "@11ty/eleventy": "^1.0.1",
