@@ -6,34 +6,57 @@
   --border-color: black;
   --base-spacing: 1rem;
   --default-font-size: 1rem;
-  --shadow: 0.25rem 0.25rem var(--highlight);
 }
 
 main {
   padding: var(--base-spacing);
 }
 
-/* Link styles */
+/* Button styles */
 button {
   position: relative;
-  display: inline-block;
   color: var(--color);
   background-color: white;
   border: 3px solid var(--border-color);
   border-radius: 1rem;
   font-size: var(--default-font-size);
-  text-decoration: none;
-  padding: 0.5rem 1rem;
-  margin: 0.25rem;
+  padding-block: 0.5rem;
+  padding-inline: 1rem;
   outline-offset: 3px;
   transition: all 150ms;
 }
 
 button:hover {
-  box-shadow: var(--shadow);
+  box-shadow: 0.25rem 0.25rem var(--highlight);
 }
 
 button:active {
-  box-shadow: 0 0 var(--highlight);
-  transform: translate(0.25rem, 0.25rem);
+  box-shadow: 0.25rem 0.25rem var(--color);
+}
+
+/* Link styles */
+a {
+  position: relative;
+  color: var(--color);
+  background-color: transparent;
+  font-size: var(--default-font-size);
+  padding-inline-end: 0.125rem;
+  margin-inline-end: 0.5rem;
+  text-decoration: none;
+  border-bottom: 2px solid var(--border-color);
+  border-right: 2px solid var(--border-color);
+  transition: box-shadow 150ms;
+}
+
+a:hover {
+  border-right: 3px solid var(--border-color);
+  box-shadow: 0.25rem 0 var(--highlight);
+}
+
+a:active {
+  box-shadow: 0.25rem 0.25rem var(--color);
+}
+
+p {
+  line-height: 1.25;
 }
