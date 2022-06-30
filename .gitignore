@@ -2,3 +2,7 @@ node_modules
 
 # eleventy output
 _site
+
+# temporary styles
+src/assets/main.css.map
+src/assets/main.css
