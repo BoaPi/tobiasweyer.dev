@@ -1,0 +1,63 @@
+@import "../../node_modules/normalize.css/normalize";
+
+:root {
+  --color: black;
+  --highlight: hotpink;
+  --highlight-hover: hotpink;
+  --highlight-active: hotpink;
+  --border-color: black;
+  --base-spacing: 1rem;
+  --default-font-size: 1rem;
+  --headline-font-size: 2rem;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+  padding: var(--base-spacing);
+}
+
+/* Button styles */
+button {
+  color: var(--color);
+  background-color: white;
+  border: 3px solid var(--border-color);
+  border-radius: 1rem;
+  font-size: var(--default-font-size);
+  padding-block: 0.5rem;
+  padding-inline: 1rem;
+  outline-offset: 3px;
+  box-shadow: 0.25rem 0.25rem var(--color);
+
+  &:hover {
+    box-shadow: 0.125rem 0.25rem var(--highlight);
+  }
+}
+
+/* Link styles */
+a {
+  color: var(--color);
+  font-size: var(--default-font-size);
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  padding-inline: 0.25rem;
+  border: 2px solid var(--border-color);
+  border-radius: 0.5rem;
+  text-decoration: none;
+
+  &::before {
+    content: "<";
+    font-weight: bold;
+  }
+
+  &::after {
+    content: "/>";
+    font-weight: bold;
+  }
+}
+
+p {
+  line-height: 1.25;
+}
