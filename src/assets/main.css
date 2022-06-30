@@ -3,9 +3,16 @@
 :root {
   --color: black;
   --highlight: hotpink;
+  --highlight-hover: hotpink;
+  --highlight-active: hotpink;
   --border-color: black;
   --base-spacing: 1rem;
   --default-font-size: 1rem;
+  --headline-font-size: 2rem;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 main {
@@ -27,7 +34,7 @@ button {
 }
 
 button:hover {
-  box-shadow: 0.25rem 0.25rem var(--highlight);
+  box-shadow: 0.125rem 0.25rem var(--highlight);
 }
 
 button:active {
@@ -36,25 +43,15 @@ button:active {
 
 /* Link styles */
 a {
-  position: relative;
   color: var(--color);
-  background-color: transparent;
-  font-size: var(--default-font-size);
-  padding-inline-end: 0.125rem;
-  margin-inline-end: 0.5rem;
   text-decoration: none;
   border-bottom: 2px solid var(--border-color);
-  border-right: 2px solid var(--border-color);
-  transition: box-shadow 150ms;
+  font-size: var(--default-font-size);
 }
 
-a:hover {
-  border-right: 3px solid var(--border-color);
-  box-shadow: 0.25rem 0 var(--highlight);
-}
-
-a:active {
-  box-shadow: 0.25rem 0.25rem var(--color);
+a::before {
+  content: "# ";
+  font-weight: bold;
 }
 
 p {
