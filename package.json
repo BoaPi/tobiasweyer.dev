@@ -11,7 +11,10 @@
     "node": "18.0.0"
   },
   "scripts": {
-    "watch": "eleventy --config=.eleventy.js --serve --port=2022"
+    "watch:sass": "sass --watch src/assets/main.scss:src/assets/main.css",
+    "watch:e11y": "eleventy --config=.eleventy.js --watch --serve --port=2022",
+    "build:sass": "sass --no-source-map --style=compressed src/assets/main.scss:src/assets/main.css",
+    "build:e11y": "eleventy --config=.eleventy.js"
   },
   "devDependencies": {
     "@11ty/eleventy": "^1.0.1",
