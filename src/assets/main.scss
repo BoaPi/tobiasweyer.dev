@@ -54,6 +54,10 @@ a {
     content: "/>";
     font-weight: bold;
   }
+
+  &:hover {
+    border-bottom: 3px solid var(--highlight);
+  }
 }
 
 p {
