@@ -8,7 +8,13 @@
   --border-color: black;
   --base-spacing: 1rem;
   --default-font-size: 1rem;
-  --headline-font-size: 2rem;
+  --headline-font-size-min: 2rem;
+  --headline-font-size-max: 3rem;
+  --headline-font-size: clamp(
+    var(--headline-font-size-min),
+    5vw,
+    var(--headline-font-size-max)
+  );
 }
 
 body {
@@ -60,6 +66,79 @@ a {
   }
 }
 
+h1,
+h2,
+h3,
+h4 {
+  font-size: var(--headline-font-size);
+  margin-top: 0;
+}
+
+h2 {
+  --headline-font-size-min: 1.75rem;
+  --headline-font-size-max: 2.75rem;
+  --headline-font-size: clamp(
+    var(--headline-font-size-min),
+    5vw,
+    var(--headline-font-size-max)
+  );
+}
+
+h3 {
+  --headline-font-size-min: 1.5rem;
+  --headline-font-size-max: 2.5rem;
+  --headline-font-size: clamp(
+    var(--headline-font-size-min),
+    5vw,
+    var(--headline-font-size-max)
+  );
+}
+
+h4 {
+  --headline-font-size-min: 1.25rem;
+  --headline-font-size-max: 2.25rem;
+  --headline-font-size: clamp(
+    var(--headline-font-size-min),
+    5vw,
+    var(--headline-font-size-max)
+  );
+}
+
 p {
-  line-height: 1.25;
+  margin: 0;
+  line-height: 1.35;
+}
+
+blockquote {
+  position: relative;
+  margin-block: 1.5rem;
+  margin-inline: 1.5rem;
+  line-height: 1.5;
+
+  &::before,
+  &::after {
+    position: absolute;
+    content: "";
+    height: 3rem;
+    width: 3rem;
+    border-bottom: 4px solid var(--border-color);
+    border-right: 4px solid var(--border-color);
+    border-bottom-right-radius: 1rem;
+    box-shadow: 0.25rem 0.25rem var(--highlight);
+  }
+
+  &::before {
+    top: -12px;
+    left: -12px;
+    transform: rotate(180deg);
+  }
+
+  &::after {
+    bottom: -12px;
+    right:-12px;
+  }
+}
+
+hr {
+  margin-block: 1rem;
 }
