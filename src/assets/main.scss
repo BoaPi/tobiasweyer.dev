@@ -79,7 +79,7 @@ h2 {
   --headline-font-size-max: 2.75rem;
   --headline-font-size: clamp(
     var(--headline-font-size-min),
-    5vw,
+    4vw,
     var(--headline-font-size-max)
   );
 }
@@ -89,7 +89,7 @@ h3 {
   --headline-font-size-max: 2.5rem;
   --headline-font-size: clamp(
     var(--headline-font-size-min),
-    5vw,
+    3vw,
     var(--headline-font-size-max)
   );
 }
@@ -99,7 +99,7 @@ h4 {
   --headline-font-size-max: 2.25rem;
   --headline-font-size: clamp(
     var(--headline-font-size-min),
-    5vw,
+    2vw,
     var(--headline-font-size-max)
   );
 }
