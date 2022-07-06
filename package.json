@@ -11,9 +11,9 @@
     "node": "18.0.0"
   },
   "scripts": {
-    "watch:sass": "sass --watch src/assets/main.scss:src/assets/main.css",
+    "watch:sass": "sass --watch src/assets/styles/main.scss:src/assets/styles/main.css",
     "watch:e11y": "eleventy --config=.eleventy.js --watch --serve --port=2022",
-    "build:sass": "sass --no-source-map --style=compressed src/assets/main.scss:src/assets/main.css",
+    "build:sass": "sass --no-source-map --style=compressed src/assets/styles/main.scss:src/assets/styles/main.css",
     "build:e11y": "eleventy --config=.eleventy.js"
   },
   "devDependencies": {

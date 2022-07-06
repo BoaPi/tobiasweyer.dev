@@ -4,5 +4,5 @@ node_modules
 _site
 
 # temporary styles
-src/assets/main.css.map
-src/assets/main.css
+src/assets/styles/main.css.map
+src/assets/styles/main.css
