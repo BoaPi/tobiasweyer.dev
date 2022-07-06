@@ -1,0 +1,65 @@
+@use "../../../node_modules/normalize.css/normalize";
+@use "foundation/typography";
+
+:root {
+  --color: black;
+  --highlight: #ffb300;
+  --border-color: black;
+  --base-spacing: 1rem;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+  padding: var(--base-spacing);
+}
+
+/* Button styles */
+button {
+  color: var(--color);
+  background-color: white;
+  border: 3px solid var(--border-color);
+  border-radius: 1rem;
+  font-size: var(--default-font-size);
+  padding-block: 0.5rem;
+  padding-inline: 1rem;
+  outline-offset: 3px;
+  box-shadow: 0.25rem 0.25rem var(--highlight);
+
+  &:hover {
+  }
+
+  &:active {
+  }
+}
+
+/* Link styles */
+a {
+  color: var(--color);
+  font-size: var(--default-font-size);
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  line-break: strict;
+  padding-inline: 0.25rem;
+  text-decoration: none;
+
+  &::before {
+    content: "<";
+    font-weight: bold;
+  }
+
+  &::after {
+    content: "/>";
+    font-weight: bold;
+  }
+
+  &:hover {
+    border-bottom: 3px solid var(--highlight);
+  }
+}
+
+hr {
+  margin-block: 1rem;
+}
