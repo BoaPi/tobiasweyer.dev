@@ -1,0 +1,27 @@
+a {
+  color: var(--color);
+  font-size: var(--default-font-size);
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  line-break: strict;
+  padding-inline: 0.25rem;
+  text-decoration: none;
+
+  &::before {
+    content: "<";
+    font-weight: bold;
+  }
+
+  &::after {
+    content: "/>";
+    font-weight: bold;
+  }
+
+  &:hover {
+    border-bottom: 3px solid var(--highlight);
+  }
+
+  &:active {
+    background-color: var(--highlight);
+  }
+}
