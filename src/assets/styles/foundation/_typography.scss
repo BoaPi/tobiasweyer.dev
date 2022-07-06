@@ -1,0 +1,95 @@
+:root {
+  --default-font-size: 1rem;
+  --headline-font-size-min: 2rem;
+  --headline-font-size-max: 3rem;
+  --headline-font-size: clamp(
+    var(--headline-font-size-min),
+    5vw,
+    var(--headline-font-size-max)
+  );
+}
+
+// general block sentence styles
+%block-sentence {
+  line-break: auto;
+  hyphens: auto;
+  text-align: justify;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-size: var(--headline-font-size);
+  margin-top: 0;
+}
+
+h2 {
+  --headline-font-size-min: 1.75rem;
+  --headline-font-size-max: 2.75rem;
+  --headline-font-size: clamp(
+    var(--headline-font-size-min),
+    4vw,
+    var(--headline-font-size-max)
+  );
+}
+
+h3 {
+  --headline-font-size-min: 1.5rem;
+  --headline-font-size-max: 2.5rem;
+  --headline-font-size: clamp(
+    var(--headline-font-size-min),
+    3vw,
+    var(--headline-font-size-max)
+  );
+}
+
+h4 {
+  --headline-font-size-min: 1.25rem;
+  --headline-font-size-max: 2.25rem;
+  --headline-font-size: clamp(
+    var(--headline-font-size-min),
+    2vw,
+    var(--headline-font-size-max)
+  );
+}
+
+p {
+  @extend %block-sentence;
+
+  margin-inline: 0;
+  margin-block: 1rem;
+  line-height: 1.35;
+}
+
+blockquote {
+  @extend %block-sentence;
+
+  position: relative;
+  margin-block: 4rem;
+  margin-inline: 3rem;
+  line-height: 1.5;
+
+  &::before,
+  &::after {
+    position: absolute;
+    content: "";
+    height: 3rem;
+    width: 3rem;
+    border-bottom: 4px solid var(--border-color);
+    border-right: 4px solid var(--border-color);
+    border-bottom-right-radius: 1rem;
+    box-shadow: 0.25rem 0.25rem var(--highlight);
+  }
+
+  &::before {
+    top: -12px;
+    left: -12px;
+    transform: rotate(180deg);
+  }
+
+  &::after {
+    bottom: -12px;
+    right: -12px;
+  }
+}
