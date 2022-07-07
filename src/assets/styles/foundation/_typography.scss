@@ -9,6 +9,11 @@
   );
 }
 
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--font-color);
+}
+
 // general block sentence styles
 %block-sentence {
   line-break: auto;
