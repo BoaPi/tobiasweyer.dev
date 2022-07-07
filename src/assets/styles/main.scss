@@ -1,23 +1,12 @@
 @use "../../../node_modules/normalize.css/normalize";
+
+// foundation
+@use "foundation/colors";
 @use "foundation/typography";
+@use "foundation/spacing";
+@use "foundation/layout";
+@use "foundation/decoration";
+
+// components
 @use "components/button";
 @use "components/link";
-
-:root {
-  --color: black;
-  --highlight: #59B5C2;
-  --border-color: black;
-  --base-spacing: 1rem;
-}
-
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-main {
-  padding: var(--base-spacing);
-}
-
-hr {
-  margin-block: 1rem;
-}
