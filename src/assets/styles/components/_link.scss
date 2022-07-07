@@ -20,8 +20,9 @@ a {
   &:hover {
     border-bottom: 3px solid var(--highlight);
   }
-
+  
   &:active {
+    border-top: 3px solid var(--highlight);
     background-color: var(--highlight);
   }
 }
