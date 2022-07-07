@@ -1,12 +1,7 @@
 @use "../../../node_modules/normalize.css/normalize";
 
 // foundation
-@use "foundation/colors";
-@use "foundation/typography";
-@use "foundation/spacing";
-@use "foundation/layout";
-@use "foundation/decoration";
+@use "foundation";
 
 // components
-@use "components/button";
-@use "components/link";
+@use "components";
