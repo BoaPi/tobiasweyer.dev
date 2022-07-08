@@ -1,0 +1,29 @@
+.brand {
+  display: grid;
+  grid-template-columns:  auto auto;
+  grid-template-rows: 1fr 1fr;
+  width: max-content;
+  font-family: monospace;
+  text-transform: uppercase;
+  line-height: 1;
+  padding: 0.5rem;
+
+  .first-name {
+    grid-column-start: 1;
+    place-self: end;
+    font-size: 1.5rem;
+  }
+  
+  .last-name {
+    grid-column-start: 1;
+    place-self: end;
+    font-size: 1.5rem;
+  }
+  
+  .domain {
+    grid-column-start: 2;
+    grid-row: 1/3;
+    place-self: start;
+    font-size: 3rem;
+  }
+}
