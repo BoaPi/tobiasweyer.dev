@@ -1,5 +1,22 @@
 header {
+  position: relative;
   display: flex;
+  padding-block-end: 0.5rem;
+  border-block-end: 3px solid var(--border-color);
+  
+  &::before,
+  &::after {
+    position: absolute;
+    content: '';
+    background-color: var(--highlight);
+    width: 100%;
+    height: 3px;
+    bottom: 0.25rem
+  }
+
+  &::after {
+    bottom: -0.65rem;
+  }
 
   nav {
     margin-inline-start: auto;
