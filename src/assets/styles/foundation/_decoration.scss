@@ -2,6 +2,7 @@ hr {
   position: relative;
   margin-block: 1rem;
   margin-inline: 0.25rem;
+  color: var(--border-color);
   box-shadow: 0.25rem 0.25rem var(--highlight),
     -0.25rem -0.25rem var(--highlight);
 }
