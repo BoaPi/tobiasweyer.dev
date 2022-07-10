@@ -7,10 +7,22 @@
     5vw,
     var(--headline-font-size-max)
   );
+  // fluid font definitions
+  --step-0: clamp(1.00rem, calc(0.85rem + 0.74vw), 1.50rem);
+  --step-1: clamp(1.13rem, calc(0.87rem + 1.30vw), 2.00rem);
+  --step-2: clamp(1.27rem, calc(0.85rem + 2.07vw), 2.67rem);
+  --step-3: clamp(1.42rem, calc(0.79rem + 3.15vw), 3.55rem);
+  --step-4: clamp(1.60rem, calc(0.67rem + 4.64vw), 4.74rem);
+  --step-5: clamp(1.80rem, calc(0.47rem + 6.68vw), 6.31rem);
+
+  // font definitions
+  --font-serif: "American Typewriter", serif;
+  --font-sans: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  --font-mono: Courier, monospace;
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans);
   color: var(--font-color);
 }
 
