@@ -1,6 +1,12 @@
 :root {
-  --background: #ffedde;
-  --highlight: #59b5c2;
-  --font-color: #2a0b44;
-  --border-color: #2a0b44;
+  // color definitions
+  --primary: #59b5c2;
+  --secondary: #2a0b44;
+  --base: #ffedde;
+
+  // mapping to utility names
+  --background: var(--base);
+  --accent: var(--primary);
+  --font-color: var(--secondary);
+  --border-color: var(--secondary);
 }

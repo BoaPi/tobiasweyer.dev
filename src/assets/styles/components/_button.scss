@@ -10,11 +10,11 @@ button {
   box-shadow: 0.25rem 0.25rem var(--font-color);
 
   &:hover {
-    background-color: var(--highlight);
+    background-color: var(--accent);
   }
 
   &:active {
     transform: translate(0.25rem, 0.25rem);
-    box-shadow: 0 0 var(--highlight);
+    box-shadow: 0 0 var(--accent);
   }
 }

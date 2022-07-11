@@ -18,11 +18,11 @@ a:not([class]) {
   }
 
   &:hover {
-    border-bottom: 3px solid var(--highlight);
+    border-bottom: 3px solid var(--accent);
   }
   
   &:active {
-    border-top: 3px solid var(--highlight);
-    background-color: var(--highlight);
+    border-top: 3px solid var(--accent);
+    background-color: var(--accent);
   }
 }
